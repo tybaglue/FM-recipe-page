@@ -31,6 +31,7 @@ img{
 }
 h1{
     font-family: "Young Serif", serif;
+    font-weight: 500;
 }
 
 .preparation{
@@ -46,18 +47,25 @@ h3{
 
 }
 
+strong{
+    font-weight: 600;
+}
 .ingredients{
     padding: 15px 0;
 }
 h2{
     font-family: "Young Serif", serif;
     color: hsl(332, 51%, 32%);
+    font-weight: 400;
 }
 
 li{
     padding: 5px;
 }
 
+.instructions{
+    padding: 15px 0;
+}
 ol, li{
     margin-left: 0;
 }
