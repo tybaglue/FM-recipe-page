@@ -1,20 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
+
 body{
-    font-family: "Young Serif", serif;  
-    font-weight: 400;
+    font-family: "Outfit", sans-serif;
+    font-weight: 200;
     font-style: normal;
+    font-size: 16px;
     background-color: hsl(30, 54%, 90%);
+    display: flex;
+    align-items: center;
 }
 
 .container{
     background-color: white;
-    width: 500px;
+    max-width: 700px;
+    max-height: fit-content;
+    border-radius: 18px;
+    margin: 10% auto;
+}
+
+.card{
+    padding: 25px;
+    align-items: center;
+    
 }
 img{
     width: 100%;
+    border-radius: 15px;
+}
+h1{
+    font-family: "Young Serif", serif;
+}
+
+.preparation{
+    background-color: hsl(330, 100%, 98%);
+    margin-top: 25px;
+    padding: 12px 20px;
+    border-radius: 15px;
+}
+
+h3{
+    color: hsl(332, 51%, 32%);
+    margin-left: 10px;
+
+}
+
+.ingredients{
+    padding: 15px 0;
 }
 h2{
     font-family: "Young Serif", serif;
+    color: hsl(332, 51%, 32%);
+}
+
+li{
+    padding: 5px;
+}
+
+ol, li{
+    margin-left: 0;
+}
+table{
+    padding: 15px;
+}
+
+td{
+    padding: 10px auto;
+}
+footer{
+    position: static;
+    bottom: 0;
+    width: 100%;
+    font-weight: 400;
+    font-family: "Outfit", sans-serif;
+
+}
+.attribution{
+    text-align: center;
 }
