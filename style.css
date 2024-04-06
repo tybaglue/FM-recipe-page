@@ -4,25 +4,27 @@
 
 body{
     font-family: "Outfit", sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-style: normal;
     font-size: 16px;
     background-color: hsl(30, 54%, 90%);
-    display: flex;
-    align-items: center;
+    
 }
 
 .container{
     background-color: white;
-    max-width: 700px;
     max-height: fit-content;
+    max-width: 44rem;
     border-radius: 18px;
     margin: 10% auto;
+    display: flex;
+    align-items: center;
 }
 
 .card{
-    padding: 25px;
+    padding: 2rem;
     align-items: center;
+    max-width: auto;
     
 }
 img{
@@ -31,32 +33,60 @@ img{
 }
 h1{
     font-family: "Young Serif", serif;
-    font-weight: 500;
+    font-weight: 450;
+    font-size: 2.5rem;
 }
 
 .preparation{
     background-color: hsl(330, 100%, 98%);
-    margin-top: 25px;
-    padding: 12px 20px;
+    margin-top: 1.5rem;
+    padding: 1rem 1rem;
     border-radius: 15px;
 }
 
+.preparation ul{
+    list-style: none;
+}
+
+.preparation ul li::before{
+    color: hsl(332, 51%, 32%);
+    content: "\2022";
+    font-weight: bold;
+    display: inline-block;
+    margin-left: -1.8rem;
+    margin-right: 2rem;
+  }
 h3{
     color: hsl(332, 51%, 32%);
-    margin-left: 10px;
+    margin-left: 0.5rem;
 
 }
 
-strong{
-    font-weight: 600;
+.preparation strong{
+    font-weight: 550;
 }
 .ingredients{
-    padding: 15px 0;
+    padding: 0.5rem 0;
 }
+
+.ingredients ul{
+    list-style: none;
+}
+
+.ingredients ul li::before{
+    color: hsl(332, 51%, 32%);
+    content: "\2022";
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 1.5rem;
+    margin-left: -2rem;
+  }
+
 h2{
     font-family: "Young Serif", serif;
     color: hsl(332, 51%, 32%);
     font-weight: 400;
+    font-size: 1.7rem;
 }
 
 li{
@@ -64,18 +94,53 @@ li{
 }
 
 .instructions{
-    padding: 15px 0;
+    padding: 0.5rem 0;
 }
-ol, li{
-    margin-left: 0;
+.instructions strong{
+    font-weight: 550;
+}
+ol{
+    list-style: none;
+}
+ol li{
+    counter-increment: num;
+}
+ol li::before { 
+    content: counter(num) "."; 
+    margin-right: 2rem;
+    margin-left: -2rem;
+    font-weight: bold; 
+    color: hsl(332, 51%, 32%);
+}
+
+.nutrition{
+    padding: 0.5rem 0;
 }
 table{
-    padding: 15px;
+    width: 100%;
+    padding-left: -1rem;
 }
 
 td{
-    padding: 10px auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    border-bottom: 1px solid grey;
 }
+
+#row4 td{
+    border-bottom: none;
+}
+
+#name td{
+    text-align: left;
+    margin-left: 2rem;
+}
+#number{
+    font-weight: 600;
+    color: hsl(332, 51%, 32%);
+}
+
 footer{
     position: static;
     bottom: 0;
