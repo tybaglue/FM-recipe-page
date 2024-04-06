@@ -75,7 +75,7 @@ h3{
 }
 
 .ingredients ul li::before{
-    color: hsl(332, 51%, 32%);
+    color: hsl(14, 45%, 36%);
     content: "\2022";
     font-weight: bold;
     display: inline-block;
@@ -111,7 +111,7 @@ ol li::before {
     margin-right: 2rem;
     margin-left: -2rem;
     font-weight: bold; 
-    color: hsl(332, 51%, 32%);
+    color: hsl(14, 45%, 36%);
 }
 
 .nutrition{
@@ -139,7 +139,7 @@ td{
 }
 #number{
     font-weight: 600;
-    color: hsl(332, 51%, 32%);
+    color: hsl(14, 45%, 36%);
 }
 
 footer{
